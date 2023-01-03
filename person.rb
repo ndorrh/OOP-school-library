@@ -31,7 +31,3 @@ class Person < Nameable
     @name
   end
 end
-
-#person1 = Person.new(12, 'james')
-
-#puts person1.correct_name

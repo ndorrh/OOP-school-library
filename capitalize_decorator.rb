@@ -9,8 +9,3 @@ class CapitalizeDecorator < Decorator
     @name_able.correct_name.capitalize()
   end
 end
-
-person = Person.new(22, 'maximilianus')
-  p person.correct_name
-  capitalizedPerson = CapitalizeDecorator.new(person)
-  puts capitalizedPerson.correct_name

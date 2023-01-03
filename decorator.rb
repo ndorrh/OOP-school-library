@@ -9,8 +9,3 @@ class Decorator < Nameable
     @name_able.correct_name
   end
 end
-
-nameable = Nameable.new()
-dec = Decorator.new(nameable)
-
-puts dec.correct_name
