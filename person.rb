@@ -1,4 +1,6 @@
-class Person
+require_relative('./name_able')
+
+class Person < Nameable
   attr_accessor :name, :age
   attr_reader :id
 
@@ -24,4 +26,12 @@ class Person
 
     true
   end
+
+  def correct_name
+    @name
+  end
 end
+
+#person1 = Person.new(12, 'james')
+
+#puts person1.correct_name
