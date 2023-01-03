@@ -12,5 +12,5 @@ class Student < Person
   end
 end
 
-student1 = Student.new(12, true, 'OSWALD', 4)
+student1 = Student.new(12, false, 'OSWALD', 4)
 puts student1.can_use_services
