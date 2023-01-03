@@ -49,7 +49,7 @@ In order to run this project you need: VScode and Ruby Installed
 
 Clone this repository to your desired folder:
 
-run: `git clone https://github.com/ndorrh/OOP-School-Library`
+run: `git clone https://github.com/ndorrh/OOP-school-library`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -57,9 +57,9 @@ run: `git clone https://github.com/ndorrh/OOP-School-Library`
 
 👤 **NDORRH OSWALD Ebu**
 
-- GitHub: [@Alhajideen](https://github.com/ndorrh)
-- Twitter: [@Alhaji_deen1](https://twitter.com/NdorrhEbu)
-- LinkedIn: [Deen](https://linkedin.com/in/ndorrhoswaldebu)
+- GitHub: [@ndorrh](https://github.com/ndorrh)
+- Twitter: [@Ndorrh Ebu](https://twitter.com/NdorrhEbu)
+- LinkedIn: [ndorrh](https://linkedin.com/in/ndorrhoswaldebu)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -68,7 +68,7 @@ run: `git clone https://github.com/ndorrh/OOP-School-Library`
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/ndorrh/OOP-School-Library/issues).
+Feel free to check the [issues page](https://github.com/ndorrh/OOP-school-library/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -86,7 +86,7 @@ If you like this project, kindly leave a star!
 
 - **What command can i use to clone?**
 
-  - On your terminal run `git clone https://github.com/ndorrh/OOP-School-Library`
+  - On your terminal run `git clone https://github.com/ndorrh/OOP-school-library`
 
 
 ## 📝 License <a name="license"></a>
