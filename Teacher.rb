@@ -1,15 +1,15 @@
-require_relative('./person.rb')
+require_relative('./person')
 
 class Teacher < Person
-  def initialize(age, parent_permission, name, specialization)
-    super(age, parent_permission, name)
-    @specialization = specialization   
+  def initialize(age, specialization, name = 'Unknown', parent_permission: true)
+    super(age, name, parent_permission)
+    @specialization = specialization
   end
 
   def can_use_services
-    true   
+    true
   end
 end
 
-teacher1 = Teacher.new(12, false, 'OSWALD', 4)
+teacher1 = Teacher.new(12, 'yyy', 'oswald')
 puts teacher1.can_use_services
