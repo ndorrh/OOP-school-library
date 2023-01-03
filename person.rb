@@ -25,5 +25,3 @@ class Person
     true
   end
 end
-
-

@@ -11,5 +11,3 @@ class Teacher < Person
   end
 end
 
-teacher1 = Teacher.new(12, 'yyy', 'oswald')
-puts teacher1.can_use_services

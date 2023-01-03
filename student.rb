@@ -11,5 +11,3 @@ class Student < Person
   end
 end
 
-student1 = Student.new(12, 4, 'oswald')
-puts student1.name
