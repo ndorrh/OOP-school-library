@@ -22,7 +22,3 @@ public
     end
   end
 end
-
-person1 = Person.new(5, true, "james")
-
-puts person1.can_use_services
