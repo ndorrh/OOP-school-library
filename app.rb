@@ -11,12 +11,19 @@ class App
     puts "Teacher created successfully"
   end
 
-  def create_student
-    puts "Student created successfully"
-  end
-
-  def create_book
-    puts "Book created successfully"
+  def create_person
+    puts 'Enter 1 to create teacher'
+    puts 'Enter 2 to create student'
+    option = gets.chomp.to_i
+    if option == 1
+      def create_student
+        puts "Student created successfully"
+      end
+    elsif option == 2
+      def create_book
+       puts "Book created successfully"
+      end
+    end
   end
 
   def create_rental
