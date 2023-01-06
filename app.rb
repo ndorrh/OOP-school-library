@@ -62,7 +62,7 @@ class App
       print " \n"
     else
       arr_person.each do |person|
-      print "#{person.class} Name: ", person.name, "\,"  " ID: " , person.id, ", Age: ", person.age, "\n" 
+      print "[#{person.class}] Name: ", person.name, "\,"  " ID: " , person.id, ", Age: ", person.age, "\n" 
     end
     print "\n"
     end
@@ -90,8 +90,25 @@ class App
     end
   end
 
-  def create_rental
-    puts 'rental created successfully'
+  def create_rental(arr_person, arr_books, rentals)
+    puts "Select a book from the following list by number: "
+    arr_books.each_with_index do |book, index|
+      print "#{index})", " Title: ", "\"#{book.title}\", ", "Author: ", book.author, " \n"
+    end
+    print " \n"
+    selected_book = gets.chomp.to_i
+    puts "Select a person from the following list by number(not id): "
+    arr_person.each_with_index do |person, index|
+      print "#{index})", "[#{person.class}] Name: ", person.name, "\,"  " ID: " , person.id, ", Age: ", person.age, "\n" 
+    end
+    print " \n"
+    selected_person = gets.chomp.to_i
+    print "Date: "
+    date = gets.chomp
+    new_rental = Rentals.new(date, arr_person[selected_person], arr_books[selected_book])
+    rentals.push(new_rental) unless rentals.include?(new_rental)
+    print "\n Book with title: ", "\"#{arr_books[selected_book].title}\"",  " author: " , arr_books[selected_book].author
+    print "Was rented by ", "#{arr_person[selected_person].name}  successfully \n\n"
   end
 
   def list_all_rental
