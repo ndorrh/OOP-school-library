@@ -14,7 +14,7 @@ def switch_options(option, arr_person, arr_books, rentals)
   when 5
     app.create_rental(arr_person, arr_books, rentals)
   when 6
-    app.list_all_rental
+    app.list_all_rental(rentals)
   else
     puts 'chose valid number'
   end

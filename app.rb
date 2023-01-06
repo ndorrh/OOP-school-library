@@ -108,11 +108,22 @@ class App
     new_rental = Rentals.new(date, arr_person[selected_person], arr_books[selected_book])
     rentals.push(new_rental) unless rentals.include?(new_rental)
     print "\n Book with title: ", "\"#{arr_books[selected_book].title}\"",  " author: " , arr_books[selected_book].author
-    print "Was rented by ", "#{arr_person[selected_person].name}  successfully \n\n"
+    print " Was rented by ", "#{arr_person[selected_person].name}  successfully \n\n"
   end
 
-  def list_all_rental
-    puts 'Id has rented the following books'
+  def list_all_rental(rentals)
+    print "ID of person: "
+    id = gets.chomp.to_i
+    puts "Rentals: "
+    rentals.each do |rental|
+      if rental.person.id == id
+        print "Date: ", rental.date, ", Book ", "\"#{rental.book.title}\"", ", by ", rental.book.autor
+      else
+        puts "ID not found Pleaase enter valid Id"
+        print " \n"
+      end
+    end
+    print " \n"
   end
 
   def run
