@@ -6,7 +6,7 @@ def switch_options(option, arr_person, arr_books, rentals)
   when 1
     app.list_all_books(arr_books)
   when 2
-    app.list_all_people(arr_person)
+    app.list_all_people(arr_persn)
   when 3
     app.create_person(arr_person)
   when 4

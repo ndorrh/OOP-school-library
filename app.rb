@@ -87,6 +87,10 @@ class App
   def create_person(arr)
     print 'Do you want to create a student (1) or a teacher (2)? [input the number]: '
     option = gets.chomp
+    until %w[1 2].include?(option)
+      puts 'Please Enter (1) for Student and (2) for Teacher: '
+      option = gets.chomp.upcase
+    end
     case option
     when '1'
       create_student(arr)
@@ -120,7 +124,7 @@ class App
 
   def list_all_rental(rentals)
     print 'ID of person: '
-    id = gets.chomp.to_i
+    id = gets.chomp
     puts 'Rentals: '
     rentals.each do |rental|
       if rental.person.id == id
